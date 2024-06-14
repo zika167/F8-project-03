@@ -28,8 +28,8 @@ html {
     border-radius: 999px;
     text-align: center;
     font-size: 1.8rem;
-    font-weight: 400;
-    line-height: var(--height);
+    font-weight: 500;
+    line-height: calc(var(--height) - 5px);
     background: #2E80CE;
 }
 
@@ -170,7 +170,7 @@ a {
 .header-action__signup {
     margin-left: 7px;
     min-width: 106px;
-    --height: 44px;
+    --height: 50px;
     font-size: 1.6rem;
 }
 
@@ -370,4 +370,132 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.8rem;
+}
+
+/* feature */
+
+.feature {
+    margin: 170px 0;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.feature__media {
+    width: 48%;
+}
+
+.feature__images {
+    position: relative;
+    padding: 0  58px 121px 0;
+}
+
+.feature__img:first-child {
+    width: 51.2rem;
+    height: 37rem;
+    object-fit: cover;
+    border-radius: 0.6rem;
+}
+
+.feature__img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 33.2rem;
+    height: 37rem;
+    object-fit: cover;
+    border-radius: 0.6rem;
+}
+
+.feature__cta {
+    margin-top: 38px;
+}
+
+.feature__desc {
+    margin-top: 18px;
+}
+
+/* member */
+
+.member {
+    margin: 170px;
+    text-align: center;
+}
+
+.member__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member__cta {
+    margin-top: 38px;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.member-item__img-bg {
+    padding-top: 28px;
+    border-radius: 0.6rem;
+    background: #EAF6FF;
+    overflow: hidden;
+}
+
+.member-item__thumb {
+    display: block;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    color: #10375C;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+
+.member-item__title {
+    color: #575F66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+}
+
+.member__controls {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 18px;
+}
+
+.member__control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    outline: none;
+    color: #575F66;
+    border: 1px solid #575F66;
+    background-color: #fff;
+    transition: .25s;
+}
+
+.member__control-btn:hover {
+    color: #fff;
+    border-color: #2E80CE;
+    background-color: #2E80CE;
+    cursor: pointer;
+}
+
+.member__control-next-icon {
+    rotate: 180deg;
 }
