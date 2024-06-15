@@ -442,6 +442,14 @@ a {
     column-gap: 30px;
 }
 
+.member-item {
+    cursor: pointer;
+}
+
+.member-item:hover .member-item__thumb {
+    transform: scale(1.15);
+}
+
 .member-item__img-bg {
     padding-top: 28px;
     border-radius: 0.6rem;
@@ -451,6 +459,10 @@ a {
 
 .member-item__thumb {
     display: block;
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: .25s;
 }
 
 .member-item__name {
@@ -498,4 +510,51 @@ a {
 
 .member__control-next-icon {
     rotate: 180deg;
+}
+
+/* install */
+
+.install {
+    margin: 170px;
+    padding-top: 95px;
+}
+
+.install__inner {
+    border-radius: 0.4rem;
+    background: #2E80CE;
+    display: flex;
+    align-items: center;
+    padding: 0  70px;
+}
+
+.install__img {
+    display: block;
+    margin-top: -95px;
+    width: 28.4rem;
+    height: 52.2rem;
+    object-fit: cover;
+}
+    
+.install__content {
+    margin-left: 160px;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__desc {
+    margin-top: 18px;
+    max-width: 586px;
+}
+
+.install__desc,
+.install__heading {
+    color: #FFF;
+}
+
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 28px;
 }
