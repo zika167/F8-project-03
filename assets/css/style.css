@@ -214,7 +214,7 @@ input,button,select,textarea {
 /* hero */
 
 .hero {
-    padding: 76px 0;
+    min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -473,11 +473,21 @@ input,button,select,textarea {
 }
 
 .member__list {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.member__list-display {
     margin-top: 70px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
 }
+
+.member__list .member__list-display:not(:first-child) {
+    display: none;
+}
+
 
 .member-item {
     cursor: pointer;
